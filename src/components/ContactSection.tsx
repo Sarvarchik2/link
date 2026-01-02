@@ -27,10 +27,8 @@ export function ContactSection() {
     // Simulate slight delay for effect
     // await new Promise(resolve => setTimeout(resolve, 1000));
 
-    const botToken = '8172353159:AAGsTHBAeWjCNnpmuvO7N_vlNEQB3m-54CY';
-    const chatId = '-5089873998'; // Group ID should technically be negative if it's a supergroup/group, usually start with -100... but trying as provided
-    // NOTE: If the ID provided (-5089873998) is correct, it will work. If it's a supergroup, it likely needs -100 prefix like -1005089873998.
-    // I will use as provided.
+    const botToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
+    const chatId = import.meta.env.VITE_TELEGRAM_CHAT_ID;
 
     const text = `
 🚀 <b>NEW LEAD FROM WEBSITE</b>
