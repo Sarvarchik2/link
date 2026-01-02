@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { LayoutDashboard, BrainCircuit, Smartphone, Database } from 'lucide-react';
+import { Bot, Users, MessageSquare, Smartphone, Globe, Palette } from 'lucide-react';
 import { GlitchText } from './GlitchText';
 import { useSoundEffects } from '../hooks/useSoundEffects';
 import { useLanguage } from '../context/LanguageContext';
@@ -14,21 +14,30 @@ export function ServicesSection() {
 
   const services = [
     {
-      title: t('services.saas.title'),
-      description: t('services.saas.desc'),
-      icon: LayoutDashboard,
-      className: 'md:col-span-2',
-      serialNumber: 'SRV-001-SAAS',
+      title: t('services.ai_agents.title'),
+      description: t('services.ai_agents.desc'),
+      icon: Bot,
+      className: 'md:col-span-1',
+      serialNumber: 'AI-CORE-01',
+      status: 'ONLINE',
+      progress: 100,
+    },
+    {
+      title: t('services.crm.title'),
+      description: t('services.crm.desc'),
+      icon: Users,
+      className: 'md:col-span-1',
+      serialNumber: 'CRM-SYS-02',
       status: 'ACTIVE',
       progress: 98,
     },
     {
-      title: t('services.ai.title'),
-      description: t('services.ai.desc'),
-      icon: BrainCircuit,
+      title: t('services.mini_apps.title'),
+      description: t('services.mini_apps.desc'),
+      icon: MessageSquare,
       className: 'md:col-span-1',
-      serialNumber: 'SRV-002-AINR',
-      status: 'ACTIVE',
+      serialNumber: 'TG-APP-03',
+      status: 'DEPLOYED',
       progress: 95,
     },
     {
@@ -36,18 +45,27 @@ export function ServicesSection() {
       description: t('services.mobile.desc'),
       icon: Smartphone,
       className: 'md:col-span-1',
-      serialNumber: 'SRV-003-MOBL',
-      status: 'ACTIVE',
+      serialNumber: 'MOB-DEV-04',
+      status: 'RUNNING',
       progress: 97,
     },
     {
-      title: t('services.backend.title'),
-      description: t('services.backend.desc'),
-      icon: Database,
-      className: 'md:col-span-2',
-      serialNumber: 'SRV-004-BCND',
+      title: t('services.web.title'),
+      description: t('services.web.desc'),
+      icon: Globe,
+      className: 'md:col-span-1',
+      serialNumber: 'WEB-ECO-05',
       status: 'ACTIVE',
       progress: 99,
+    },
+    {
+      title: t('services.design.title'),
+      description: t('services.design.desc'),
+      icon: Palette,
+      className: 'md:col-span-1',
+      serialNumber: 'UI-UX-06',
+      status: 'ONLINE',
+      progress: 100,
     },
   ];
 

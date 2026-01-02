@@ -35,7 +35,7 @@ export function HeroSection() {
           {/* Scanning line effect */}
           <ScanningLine />
 
-          <h1 className="text-6xl md:text-8xl tracking-tight mb-6 text-white font-mono" style={{ fontWeight: 700 }}>
+          <h1 className="text-3xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] leading-none tracking-tighter mb-8 text-white font-mono" style={{ fontWeight: 900 }}>
             <GlitchText>{t('hero.line1')}</GlitchText><br />
             <GlitchText>{t('hero.line2')}</GlitchText><br />
             <GlitchText>{t('hero.line3')}</GlitchText>

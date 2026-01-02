@@ -15,6 +15,7 @@ import { FilmGrain } from './components/FilmGrain';
 import { DigitalRain } from './components/DigitalRain';
 import { AmbientSound } from './components/AmbientSound';
 import { BackgroundGrid } from './components/BackgroundGrid';
+import { SEO } from './components/SEO';
 
 export default function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -27,6 +28,7 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-black text-white overflow-x-hidden">
+      <SEO />
       {/* System Initialization Intro */}
       {showIntro && <SystemIntro onComplete={handleIntroComplete} />}
 
@@ -63,7 +65,7 @@ export default function App() {
             <div id="home">
               <HeroSection />
             </div>
-            
+
             <ServicesSection />
             <PortfolioSection />
             <AboutSection />

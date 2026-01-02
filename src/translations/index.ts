@@ -22,21 +22,29 @@ export const translations = {
         services: {
             title: 'XIZMATLAR',
             subtitle: 'Biznesingiz uchun kompleks yechimlar',
-            saas: {
-                title: 'SaaS Rivojlantirish',
-                desc: 'Masshtablashuvchi veb-ilovalar uchun Django REST Framework va Vue.js yechimlari'
+            ai_agents: {
+                title: 'AI Agentlar va Chat-botlar',
+                desc: '24/7 raqamli xodimlaringiz. Muloqotni avtomatlashtiruvchi intellektual agentlar.'
             },
-            ai: {
-                title: 'AI Integratsiyasi',
-                desc: 'Mashinaviy o\'rganish va neyron tarmoqlarni mahsulotlaringizga integratsiya qilish'
+            crm: {
+                title: 'CRM Tizimlar',
+                desc: 'Jarayonlaringizga moslashtirilgan boshqaruv vositalari.'
+            },
+            mini_apps: {
+                title: 'Telegram Mini Apps',
+                desc: 'Butun biznes messendjer ichida. Telegramni raqamli vitrinaga aylantiramiz.'
             },
             mobile: {
                 title: 'Mobil Ilovalar',
-                desc: 'Flutter yordamida krossplatformali nativ ilovalar'
+                desc: 'Nativ va krossplatformali ilovalar (Swift, Kotlin, Flutter).'
             },
-            backend: {
-                title: 'Backend Tizimlar',
-                desc: 'Python/Django asosida yuqori yuklamali API va mikroserrvis arxitekturasi'
+            web: {
+                title: 'Veb va E-commerce',
+                desc: 'Daromad keltiradigan tijorat saytlari va internet-do\'konlar.'
+            },
+            design: {
+                title: 'UI/UX Dizayn',
+                desc: 'Natija beradigan estetika va o\'ylangan foydalanuvchi tajribasi.'
             }
         },
         portfolio: {
@@ -46,6 +54,33 @@ export const translations = {
             projects: {
                 p1: {
                     desc: 'AI yordamida kundalik vazifalarni boshqarish uchun intellektual platforma'
+                },
+                abuexpress: {
+                    desc: 'Xalqaro logistika kompaniyasi. Yuklarni kuzatish va yetkazib berishni boshqarish platformasi.'
+                },
+                profyer: {
+                    desc: 'Uy va ofis xizmatlari uchun mutaxassislarni topish platformasi. Har qanday vazifa uchun professional yechim.'
+                },
+                ozbe: {
+                    desc: 'Moda kiyimlari onlayn do\'koni. Noyob uslubga ega zamonaviy brend platformasi.'
+                },
+                magictour: {
+                    desc: 'Sayohat agentligi veb-sayti. Unutilmas sayohatlar va turlar uchun onlayn platforma.'
+                },
+                makromarket: {
+                    desc: 'Yirik supermarketlar tarmog\'i onlayn do\'koni. Mahsulotlar katalogi, aksiyalar va yetkazib berish.'
+                },
+                lixiang: {
+                    desc: 'Lixiang avtomobillari rasmiy dilerining sayti. Avtomobil konfiguratori va modellar qatori.'
+                },
+                ione: {
+                    desc: 'To\'liq sikldagi marketing agentligi. Brendlar uchun loyihalarni ishlab chiqish va amalga oshirish.'
+                },
+                mysport: {
+                    desc: 'O\'zbekiston Sport Federatsiyasi platformasi. Sport inshootlari xaritasi va sportchilar bazasi.'
+                },
+                cult: {
+                    desc: 'Zamonaviy barbershop sayti. Xizmatlar, narxlar va onlayn bron qilish.'
                 },
                 p2: {
                     desc: 'Yirik korporatsiyalar uchun masshtablashuvchi CRM tizimi'
@@ -94,7 +129,7 @@ export const translations = {
             subtitle: 'Loyihangizni muhokama qilaylik',
             form: {
                 name: 'Ism',
-                email: 'Email',
+                email: 'Telefon raqam',
                 message: 'Xabar',
                 namePlaceholder: 'Ismingiz',
                 msgPlaceholder: 'Loyihangiz haqida so\'zlab bering...',
@@ -134,21 +169,29 @@ export const translations = {
         services: {
             title: 'УСЛУГИ',
             subtitle: 'Комплексные решения для вашего бизнеса',
-            saas: {
-                title: 'SaaS Разработка',
-                desc: 'Облачные решения с использованием Django REST Framework и Vue.js для масштабируемых веб-приложений'
+            ai_agents: {
+                title: 'ИИ-агенты и Чат-боты',
+                desc: 'Ваши цифровые сотрудники 24/7. Интеллектуальные агенты для полной автоматизации коммуникации.'
             },
-            ai: {
-                title: 'AI Интеграция',
-                desc: 'Интеграция машинного обучения и нейронных сетей в ваши продукты'
+            crm: {
+                title: 'Разработка CRM-систем',
+                desc: 'Инструменты управления, созданные под ваши процессы. Проектирование систем с нуля.'
+            },
+            mini_apps: {
+                title: 'Mini Apps в Telegram',
+                desc: 'Весь бизнес внутри мессенджера. Превращаем Telegram в полноценную цифровую витрину.'
             },
             mobile: {
-                title: 'Мобильные Приложения',
-                desc: 'Нативные приложения на Flutter с кроссплатформенной разработкой'
+                title: 'Мобильная разработка',
+                desc: 'Нативные и кроссплатформенные приложения. Современные мобильные продукты.'
             },
-            backend: {
-                title: 'Backend Системы',
-                desc: 'Высоконагруженные API и микросервисная архитектура на Python/Django'
+            web: {
+                title: 'Веб-разработка и E-commerce',
+                desc: 'Коммерческие сайты, которые приносят прибыль. Масштабируемая архитектура.'
+            },
+            design: {
+                title: 'Дизайн и проектирование',
+                desc: 'Эстетика, работающая на результат. Продуманный пользовательский опыт.'
             }
         },
         portfolio: {
@@ -158,6 +201,33 @@ export const translations = {
             projects: {
                 p1: {
                     desc: 'Интеллектуальная платформа для управления повседневными задачами с использованием AI'
+                },
+                abuexpress: {
+                    desc: 'Международная логистическая компания. Платформа для отслеживания грузов и управления доставками.'
+                },
+                profyer: {
+                    desc: 'Платформа для поиска специалистов для дома и офиса. Профессиональные решения для любых задач.'
+                },
+                ozbe: {
+                    desc: 'Интернет-магазин модной одежды. Платформа современного бренда с уникальным стилем.'
+                },
+                magictour: {
+                    desc: 'Веб-сайт туристического агентства. Онлайн-платформа для бронирования туров и путешествий.'
+                },
+                makromarket: {
+                    desc: 'Интернет-магазин крупной сети супермаркетов. Каталог товаров, акции и доставка.'
+                },
+                lixiang: {
+                    desc: 'Сайт официального дилера автомобилей Lixiang. Конфигуратор и модельный ряд электромобилей.'
+                },
+                ione: {
+                    desc: 'Маркетинговое агентство полного цикла. Разработка и реализация проектов для брендов.'
+                },
+                mysport: {
+                    desc: 'Платформа Федерации спорта Узбекистана. Карта спортивных сооружений и база спортсменов.'
+                },
+                cult: {
+                    desc: 'Сайт современного барбершопа. Услуги, прайс и онлайн-запись.'
                 },
                 p2: {
                     desc: 'Масштабируемая CRM система для крупных корпораций'
@@ -206,7 +276,7 @@ export const translations = {
             subtitle: 'Давайте обсудим ваш проект',
             form: {
                 name: 'Имя',
-                email: 'Email',
+                email: 'Телефон',
                 message: 'Сообщение',
                 namePlaceholder: 'Ваше имя',
                 msgPlaceholder: 'Расскажите о вашем проекте...',
@@ -246,21 +316,29 @@ export const translations = {
         services: {
             title: 'SERVICES',
             subtitle: 'Comprehensive solutions for your business',
-            saas: {
-                title: 'SaaS Development',
-                desc: 'Cloud solutions using Django REST Framework and Vue.js for scalable web applications'
+            ai_agents: {
+                title: 'AI Agents & Chatbots',
+                desc: 'Your digital employees 24/7. Intelligent agents automating communication.'
             },
-            ai: {
-                title: 'AI Integration',
-                desc: 'Integration of machine learning and neural networks into your products'
+            crm: {
+                title: 'CRM Development',
+                desc: 'Management tools tailored to your processes. Custom system design.'
+            },
+            mini_apps: {
+                title: 'Telegram Mini Apps',
+                desc: 'Full business functionality inside the messenger. Digital storefronts in Telegram.'
             },
             mobile: {
-                title: 'Mobile Apps',
-                desc: 'Native applications on Flutter with cross-platform development'
+                title: 'Mobile Development',
+                desc: 'Native and cross-platform applications. Modern mobile products.'
             },
-            backend: {
-                title: 'Backend Systems',
-                desc: 'High-load APIs and microservice architecture on Python/Django'
+            web: {
+                title: 'Web & E-commerce',
+                desc: 'Profitable commercial websites and scalable architectures.'
+            },
+            design: {
+                title: 'Design & UI/UX',
+                desc: 'Aesthetics that work. Thoughtful user experience and modern visual style.'
             }
         },
         portfolio: {
@@ -270,6 +348,33 @@ export const translations = {
             projects: {
                 p1: {
                     desc: 'Intelligent platform for daily task management using AI'
+                },
+                abuexpress: {
+                    desc: 'International logistics company. Platform for cargo tracking and delivery management.'
+                },
+                profyer: {
+                    desc: 'Platform for finding professionals for home and office services. Expert solutions for any task.'
+                },
+                ozbe: {
+                    desc: 'Fashion clothing online store. Modern brand platform with unique style.'
+                },
+                magictour: {
+                    desc: 'Travel agency website. Online platform for booking tours and unforgettable trips.'
+                },
+                makromarket: {
+                    desc: 'Online store for a major supermarket chain. Product catalog, promotions, and delivery.'
+                },
+                lixiang: {
+                    desc: 'Official Lixiang car dealer website. Car configurator and electric vehicle model lineup.'
+                },
+                ione: {
+                    desc: 'Full-cycle marketing agency. Development and implementation of projects for brands.'
+                },
+                mysport: {
+                    desc: 'Uzbekistan Sports Federation platform. Map of sports facilities and athletes database.'
+                },
+                cult: {
+                    desc: 'Modern barbershop website. Services, pricing, and online booking.'
                 },
                 p2: {
                     desc: 'Scalable CRM system for large corporations'
@@ -318,7 +423,7 @@ export const translations = {
             subtitle: 'Let\'s discuss your project',
             form: {
                 name: 'Name',
-                email: 'Email',
+                email: 'Phone',
                 message: 'Message',
                 namePlaceholder: 'Your Name',
                 msgPlaceholder: 'Tell us about your project...',

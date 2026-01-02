@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Linkedin, Instagram, Send } from 'lucide-react';
 
 import { useLanguage } from '../context/LanguageContext';
 
@@ -48,17 +48,19 @@ export function Footer() {
             <h4 className="mb-4 text-gray-400 uppercase tracking-wider text-sm font-mono">{t('footer.social')}</h4>
             <div className="flex gap-4">
               {[
-                { icon: Github, label: 'GitHub' },
-                { icon: Linkedin, label: 'LinkedIn' },
-                { icon: Twitter, label: 'Twitter' },
-              ].map(({ icon: Icon, label }) => (
+                { icon: Send, label: 'Telegram', href: 'https://t.me/sarubola' },
+                { icon: Instagram, label: 'Instagram', href: 'https://instagram.com/sarubola' },
+                { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/sarvar-faxrutdinov-2b2143396' },
+              ].map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}
-                  href="#"
-                  className="w-10 h-10 rounded-lg bg-[#6FB98F]/10 border border-[#6FB98F]/20 flex items-center justify-center hover:bg-[#6FB98F]/20 transition-colors"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-[#6FB98F]/10 border border-[#6FB98F]/20 flex items-center justify-center hover:bg-[#6FB98F]/20 transition-colors group"
                   aria-label={label}
                 >
-                  <Icon className="w-5 h-5 text-[#6FB98F]" strokeWidth={1.5} />
+                  <Icon className="w-5 h-5 text-[#6FB98F] group-hover:scale-110 transition-transform" strokeWidth={1.5} />
                 </a>
               ))}
             </div>
