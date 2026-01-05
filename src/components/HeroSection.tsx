@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Hand } from 'lucide-react';
 import { ParticleNetwork } from './ParticleNetwork';
 import { GlitchText } from './GlitchText';
 import { MagneticButton } from './MagneticButton';
@@ -8,7 +8,11 @@ import { useSoundEffects } from '../hooks/useSoundEffects';
 import { ScanningLine } from './ScanningLine';
 import { useLanguage } from '../context/LanguageContext';
 
-export function HeroSection() {
+interface HeroSectionProps {
+  onToggleHandControl: () => void;
+}
+
+export function HeroSection({ onToggleHandControl }: HeroSectionProps) {
   const { playWhooshSound } = useSoundEffects();
   const { t } = useLanguage();
 
@@ -54,13 +58,11 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
+            className="flex flex-col sm:flex-row gap-4 items-center justify-center"
           >
             <MagneticButton
               onClick={handleStartProject}
-              className="group relative px-8 py-4 bg-transparent border border-[#6FB98F] text-[#6FB98F] rounded-lg overflow-hidden transition-all duration-300 hover:shadow-[0_0_20px_rgba(111,185,143,0.4)]"
-              style={{
-                fontWeight: 600,
-              }}
+              className="group relative px-8 py-4 bg-transparent border border-[#6FB98F] text-[#6FB98F] rounded-lg overflow-hidden transition-all duration-300 hover:shadow-[0_0_20px_rgba(111,185,143,0.4)] font-semibold"
             >
               <span className="relative z-10 flex items-center gap-2 uppercase tracking-wider font-mono">
                 {t('hero.start_project')}
@@ -77,6 +79,31 @@ export function HeroSection() {
                 transition={{
                   duration: 2,
                   repeat: Infinity,
+                }}
+              />
+            </MagneticButton>
+
+            {/* Hand Control Toggle Button */}
+            <MagneticButton
+              onClick={onToggleHandControl}
+              className="group relative px-8 py-4 bg-transparent border border-cyan-400 text-cyan-400 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,245,255,0.4)] font-semibold"
+            >
+              <span className="relative z-10 flex items-center gap-2 uppercase tracking-wider font-mono">
+                <Hand className="w-5 h-5" strokeWidth={1.5} />
+                {t('hero.hand_control')}
+              </span>
+
+              {/* Glowing outline effect */}
+              <motion.div
+                className="absolute inset-0 border-2 border-cyan-400 rounded-lg"
+                animate={{
+                  opacity: [0, 0.5, 0],
+                  scale: [1, 1.05, 1],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  delay: 0.5,
                 }}
               />
             </MagneticButton>

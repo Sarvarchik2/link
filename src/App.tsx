@@ -16,10 +16,16 @@ import { DigitalRain } from './components/DigitalRain';
 import { AmbientSound } from './components/AmbientSound';
 import { BackgroundGrid } from './components/BackgroundGrid';
 import { SEO } from './components/SEO';
+import HandControlHUD from './components/HandControlHUD';
+import HandCursor from './components/HandCursor';
+import ScrollIndicator from './components/ScrollIndicator';
+import ScrollControl from './components/ScrollControl';
+import { useHandControl } from './hooks/useHandControl';
 
 export default function App() {
   const [showIntro, setShowIntro] = useState(true);
   const [contentReady, setContentReady] = useState(false);
+  const { isActive, leftHand, rightHand, toggle, canvasRef, scrollDelta } = useHandControl();
 
   const handleIntroComplete = () => {
     setShowIntro(false);
@@ -63,7 +69,7 @@ export default function App() {
           {/* Main content */}
           <main>
             <div id="home">
-              <HeroSection />
+              <HeroSection onToggleHandControl={toggle} />
             </div>
 
             <ServicesSection />
@@ -75,6 +81,22 @@ export default function App() {
 
           {/* Footer */}
           <Footer />
+
+          {/* Hand Control Components */}
+          <HandControlHUD isActive={isActive} leftHand={leftHand} rightHand={rightHand} canvasRef={canvasRef} />
+          <ScrollIndicator scrollDelta={scrollDelta} isActive={isActive} />
+          <ScrollControl
+            isActive={isActive}
+            isPinching={rightHand?.isPinching || false}
+            cursorX={rightHand ? rightHand.x * window.innerWidth : 0}
+            cursorY={rightHand ? rightHand.y * window.innerHeight : 0}
+          />
+          {isActive && (
+            <>
+              {/* Only left hand shows cursor - right hand is for scrolling */}
+              {leftHand && <HandCursor hand={leftHand} color="#FF006E" />}
+            </>
+          )}
         </>
       )}
     </div>

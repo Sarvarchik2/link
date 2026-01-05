@@ -17,7 +17,8 @@ export const translations = {
             line2: 'TEXNOLOGIYALARINI',
             line3: 'YARATAMIZ',
             subtitle: 'Murakkab vazifalarni elegant kodga aylantiramiz',
-            start_project: 'Loyihani Boshlash'
+            start_project: 'Loyihani Boshlash',
+            hand_control: 'Qo\'l bilan boshqarish'
         },
         services: {
             title: 'XIZMATLAR',
@@ -164,7 +165,8 @@ export const translations = {
             line2: 'РЕШЕНИЙ',
             line3: 'БУДУЩЕГО',
             subtitle: 'Превращаем сложные задачи в элегантный код',
-            start_project: 'Начать Проект'
+            start_project: 'Начать Проект',
+            hand_control: 'Управление руками'
         },
         services: {
             title: 'УСЛУГИ',
@@ -311,7 +313,8 @@ export const translations = {
             line2: 'NEXT-GEN',
             line3: 'SOLUTIONS',
             subtitle: 'Converting complex tasks into elegant code',
-            start_project: 'Start Project'
+            start_project: 'Start Project',
+            hand_control: 'Hand Control'
         },
         services: {
             title: 'SERVICES',
