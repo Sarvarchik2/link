@@ -97,15 +97,7 @@ export function TeamSection() {
       photo: '/images/team/jovohir.jpg',
       specialization: 'PYTHON/FLUTTER',
     },
-    {
-      id: '007',
-      name: 'FERUZ',
-      role: 'FULL STACK & AI',
-      accessLevel: 'ALPHA',
-      status: 'ONLINE',
-      photo: '/images/team/feruz.jpg',
-      specialization: 'FULL-STACK/AI',
-    },
+
   ];
 
   return (
@@ -141,7 +133,7 @@ export function TeamSection() {
         <button
           onClick={scrollPrev}
           className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-black/50 border border-[#6FB98F]/30 text-[#6FB98F] opacity-0 group-hover:opacity-100 transition-all hover:bg-[#6FB98F]/10 hover:border-[#6FB98F] disabled:opacity-0 backdrop-blur-sm"
-          disabled={!prevBtnEnabled && false}
+          disabled={!prevBtnEnabled}
         >
           <ChevronLeft className="w-8 h-8" />
         </button>
@@ -149,7 +141,7 @@ export function TeamSection() {
         <button
           onClick={scrollNext}
           className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-black/50 border border-[#6FB98F]/30 text-[#6FB98F] opacity-0 group-hover:opacity-100 transition-all hover:bg-[#6FB98F]/10 hover:border-[#6FB98F] disabled:opacity-0 backdrop-blur-sm"
-          disabled={!nextBtnEnabled && false}
+          disabled={!nextBtnEnabled}
         >
           <ChevronRight className="w-8 h-8" />
         </button>
